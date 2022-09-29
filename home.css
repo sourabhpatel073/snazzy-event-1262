@@ -204,6 +204,8 @@ border-radius: 10px;}
     border-radius: 10px;
 }
 
+#middle input:hover{cursor: pointer;}
+
 #bottom{
  display: flex;
  width: 25%;
@@ -245,7 +247,7 @@ border-radius: 10px;}
 }
 
 #div2{
-    height: 300px;
+    height: 400px;
     width: 95%;
     margin: auto;
     margin-top: 5%;
@@ -255,26 +257,58 @@ border-radius: 10px;}
 #div2 img{
     width: 100%;
     border-radius: 10px;
+    height: 100%;
 }
 
-#div3{
-    height: 250px;
-    width: 95%;
+#div2A{
+    width: 80%;
+    height: 90px;
     margin: auto;
-    margin-top: 15%;
-    border-radius: 10px;
+    margin-top: 5%;
 }
 
-#div3 img{
+#div2A img{
     width: 100%;
     height: 100%;
-    margin-top: 5%;
+}
+
+#div3{display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 250px;
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 10px;
+    gap: 8%;
+}
+#div3>div:nth-child(1){
+grid-area: 1/1/2/4;
+
+}
+#div3>div:nth-child(1):hover{
+    cursor: pointer;
+}
+
+#div3>div:nth-child(2):hover{
+    cursor: pointer;
+}
+
+
+#div3>div:nth-child(2){
+    grid-area: 1/4/2/5;
+    
+    }
+
+#div3 img{
+    width: 110%;
+    height: 100%;
     border-radius: 10px;
     border: 2px solid blue;
 }
 
 #div4{
-    height: 300px;
+    height: 320px;
     width: 95%;
     margin: auto;
     margin-top: 7%;
@@ -336,7 +370,7 @@ border-radius: 10px;}
     {
         grid-area: 1/3/2/4;
         border-radius: 10px;
-        border: 1 px solid red;
+        
         
     }
 
@@ -353,4 +387,66 @@ border-radius: 10px;}
         margin-bottom: 10px;
         border-radius: 10px;
         background-color: rgb(54,98,216);
+    }
+
+    #div5{
+        width: 95%;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    #div6{
+        width: 95%;
+        text-align: center;
+        color: blue;
+        margin-bottom: 5%;
+    }
+
+    #div6:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    #div7{
+        width: 95%;
+        height: 300px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 300px;
+        gap: 2%;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    }
+
+    #div7 img{
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+    #div7 h4{
+        
+     color: #030612;
+     font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.125rem;
+    }
+    #div7 p{
+        
+     color: #030612;
+     font-size: 0.775rem;
+      font-weight: 500;
+      line-height: 1.125rem;
+      color: blue;
+    }
+
+    #div7 p:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    #div8{
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        font-size:x-small;
+        padding-bottom: 10px;
+        margin-top: 2%;
     }
