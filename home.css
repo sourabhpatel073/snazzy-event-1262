@@ -308,33 +308,36 @@ grid-area: 1/1/2/4;
 }
 
 #div4{
-    height: 320px;
+    height: auto;
     width: 95%;
     margin: auto;
     margin-top: 7%;
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: 300px;
+    grid-template-rows: auto;
     gap: 3%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-#div4 div:nth-child(1){
+#div4>div:nth-child(1){
 
     grid-area: 1/1/2/3;
+    
 }
 
-#div4 div:nth-child(2){
+#div4>div:nth-child(2){
    
     grid-area: 1/3/2/6;
+    
 }
 
-#div4 div:nth-child(3){
+#div4>div:nth-child(3){
     
     grid-area: 1/6/2/7;
     padding-top: 5%;
     padding-right: 10%;
+   
 }
 
 
@@ -346,17 +349,18 @@ grid-area: 1/1/2/4;
     border-radius: 10px;}
 
     #div4-container{
-    display: grid;
+     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 50px;
+    grid-template-rows: auto;
     gap: 5px;
+    
     }
 
-    #div4-container div:nth-child(1)
+    #div4-container>div:nth-child(1)
     {
         grid-area: 1/1/2/2;
         border-radius: 10px;
-        
+       
     }
 
     #div4-container div:nth-child(2)
@@ -369,7 +373,8 @@ grid-area: 1/1/2/4;
     #div4-container div:nth-child(3)
     {
         grid-area: 1/3/2/4;
-        border-radius: 10px;
+
+        
         
         
     }
@@ -382,11 +387,16 @@ grid-area: 1/1/2/4;
 
     #div4-container button{
         width: 100%;
-        height: 100%;
-        margin-left: 10px;
-        margin-bottom: 10px;
+        height: 20%;
+        height: auto;
         border-radius: 10px;
+        color: white;
         background-color: rgb(54,98,216);
+    }
+
+    #div4-container button:hover{
+        cursor: pointer;
+        background-color: blue;
     }
 
     #div5{
@@ -408,11 +418,11 @@ grid-area: 1/1/2/4;
     }
     #div7{
         width: 95%;
-        height: 300px;
+       height: auto;;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 300px;
+        grid-template-rows: auto;
         gap: 2%;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
     }
