@@ -1,0 +1,68 @@
+#nav{
+    display: flex;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+#nav-img{
+    width: 20px;
+    height: 20px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#nav-img-1{
+    width: 120px;
+    height: 60px;
+    margin-left: 38%;
+}
+#container{
+    text-align: center;
+    font-size:small;
+ white-space: nowrap;
+ font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ font-synthesis: none;
+ color: #343B53;
+ font-size: 0.675rem;
+ font-weight: 500;
+ width: 40%;
+ margin: auto;
+ 
+}
+
+#container img{
+    width: 10px;
+    margin-left: 5px;
+}
+#container button{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+}
+#container button:hover{
+    cursor: pointer;
+}
+#input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#container div{
+    margin-top: 10px;
+}
+#condition {
+    width: 100%;
+    height: 15%;
+    font-size: x-small;
+   
+}
+
+#creat:hover{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}

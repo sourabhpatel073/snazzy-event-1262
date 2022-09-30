@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./index.css" />
 </head>
 <body>
     <!--Navbar start-->
@@ -28,9 +28,17 @@
                 <div>Support</div>
                 <div>Trips</div>
                 <div><img src="https://img.icons8.com/material-sharp/2x/appointment-reminders--v2.png"></div>
-                <div>Sign In</div>
+                <div id="signin">Sign In</div>
             </div>
-
+             <div id="dogle"> 
+                <div><img src="https://a.travel-assets.com/pricing-claim/sparkle_white.svg"></div>
+                <div><h4>Save an average of 15% on thousands of hotels when you're signed in</h4></div>
+                <div><button id="dbutton">Sign in</button></div>
+                <div>Creat a free account</div>
+                <div>List of Favourites</div>
+                <div>Expedia Rewards</div>
+                <div>Feedback</div>
+             </div>
         </div>
            <!--Navbar end-->
 
@@ -39,7 +47,7 @@
         <div id="container">
             <div id="container-1">
                 <div id="top">
-                    <div> <a href="./home.html">Stays</a></div>
+                    <div> <a href="./index.html">Stays</a></div>
                     <div><a href="./flights.html">Flights</a></div>
                     <div><a href="./cars1.html">Cars</a></div>
                     <div><a href="./pakages.html">Packages</a></div>
@@ -156,3 +164,23 @@
         <p>© 2022 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p></div>
 </body>
 </html>
+
+<script>
+ let signin=document.getElementById("signin")
+  let div=document.getElementById("dogle")
+  let button=document.querySelector("#dbutton")
+ 
+      div.style.display="none"
+ signin.addEventListener('click',() =>{
+ if (div.style.display==="none"){
+    div.style.display="block";
+ }
+ else{
+    div.style.display="none"
+ }
+ })
+ button.addEventListener("click",() =>{
+    window.location.href="/signup/signin.html"
+ })
+
+</script>
