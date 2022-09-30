@@ -95,6 +95,7 @@ margin: auto;
 margin-top: 3%;
 border-radius: 10px;
 width: 95%;
+
 }
 
 #container-1{box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
@@ -158,11 +159,11 @@ margin: auto;}
     }
     #top1-left{
              display: flex;
-              width: 30%;
+              width: 100%;
              flex-direction: row;
-             justify-content: space-between;
+             justify-content: right;
+             justify-items: center;
              margin-left: 3%;
-             padding-top: 1%;
              font-size:small;
              white-space: nowrap;
               font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -170,17 +171,25 @@ margin: auto;}
               color: #343B53;
               font-size: 0.875rem;
               font-weight: 500;
+              
     }
 
     #top1-left div{
-        border-radius: 10px;
+        
+        display: flex;
+        justify-content: center;
+             justify-items: center;
     }
 
     #top1-left div:hover{
-        background-color: rgb(161, 161, 199);
+        text-decoration: underline;
         cursor: pointer;
+        color: blue;
+       
     }
-    
+    #top1-left div:nth-child(1){
+        padding-top: 3%;
+    }
 #middle{
    display: grid;
    grid-template-columns: repeat(6,1fr);
@@ -281,7 +290,7 @@ border-radius: 10px;}
     height: 400px;
     width: 95%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 2%;
     border-radius: 10px;
     
 }
@@ -495,4 +504,13 @@ grid-area: 1/1/2/4;
         padding-bottom: 10px;
         margin-top: 2%;
        
+    }
+
+    #checkbox{
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+
+    #checkbox input:hover{
+        cursor: pointer;
     }
