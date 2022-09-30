@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./signin.css" />
+</head>
+<body>
+    <div id="nav">
+        <img id="nav-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAAYFBMVEX///8eIB0AAADGxsXIycgbHRoZGxjx8fHu7u709PQNEAsABwDq6uoLDQoVFxQFCANISUg4OjhPUE9CQ0KDg4NWV1aZmZh0dXTj4+MpKygjJSK2trXS0tJ9fX3Z2dkyMzLQ3II2AAABn0lEQVRoge2a63aDIBCEAdG2EEVjUrVt6vu/ZW0uuvq/M+lx5wW+A8ywXNYYlUqlUqlUqn+tw+l4fqeQvYtV5YYXPDlzuZ0UOzjZ38g2L1/B5CzdyNa6A5hcFndyXmAXO0sPsnUnLNk9ZtuGZidkv5Bj/YYkizHHI9Rii7cnMjTSghxq6Ji9W8gNa515qYrtXrydBJnlbTDZLxUjtNjZlt7eSaq0YiDJXisGh5y0Yvw5mZcq9xQVAwneZ8V4Bm9XZ3CeZ7L9+PQZQv2VLNbZ2tyBNHwZ00syToXrTRcY5CnDnRkog56WdmCiaRN+Ydms+n3844Rr/L4Ge72lQNTftzNP20gndmSVj03RBI9bHBVK7NGfeaXeXHnQ6x1mdlmD2eKwkmrwRwPT55523Vv7fMSiVz4f0XMuHjRa2qcW2ec8dsJedzc+Z2YMXUsSr5ZkQTwaor22XLnhGVs93/EyFhpixgbimWnknVuYtQSeMbnexFqC39eoPp/ZFZotW2IuWLRsBAr7aX8STV/wUTNb3ZgNfsy2RpVKpVKpVCqsfgBX5BwGKRTRLwAAAABJRU5ErkJggg=="> 
+        <img id="nav-img-1" src="https://www.expedia.co.in/_dms/interstitial/logo.svg?locale=en_GB&siteid=27"> 
+        
+    </div>
+    <div id="container">
+        <div>
+            <h1>Sign in</h1>
+        </div>
+        <div>
+            <input id="input" type="email"  placeholder="Email Adress">
+        </div>
+        <div>
+            <input id="input" type="password"  placeholder="password">
+        </div>
+        <div>
+            <input  type="checkbox"> <label for="checkbox">Keep me signed in</label>
+        </div>
+        <div id="condition">
+            <p>By signing in, I agree to the Expedia Terms and Conditions,</p><p> Statement and Expedia Rewards Terms and Conditions.</p>
+        </div>
+        <div>
+            <button id="button">Sign in</button>
+        </div>
+        <div>
+            forgot password?
+        </div>
+        <div>
+           <p id="creat"> Don't have an account? Create one</p>
+        </div>
+        <div>
+            <div>or continue with</div>
+            <div>
+                <img src="https://a.travel-assets.com/egds/marks/apple.svg" alt="error">
+                <img src="https://a.travel-assets.com/egds/marks/facebook.svg" alt="error">
+                <img src="https://a.travel-assets.com/egds/marks/google.svg" alt="error">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let submit_bth=document.querySelector("button")
+submit_bth.addEventListener("click",submitfun)
+
+function submitfun(){
+    let input_tags=document.querySelectorAll("input")
+    let email_detail=input_tags[0].value
+    let password=input_tags[1].value
+
+    let data=JSON.parse(localStorage.getItem("signup_details"))
+    if(email_detail===data.email_detail && password===data.password)
+    {alert("hurry login succes")}
+    else{alert("wrong details")}
+}
+
+document.querySelector("#nav-img").addEventListener("click",() =>{
+    window.location.href="/index.html"
+    
+ })
+ document.querySelector("#creat").addEventListener("click",() =>{
+    window.location.href="/signup/signup.html"
+    
+ })
+
+</script>
