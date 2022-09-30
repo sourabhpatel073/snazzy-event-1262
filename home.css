@@ -152,7 +152,7 @@ margin: auto;}
 #middle{
    display: grid;
    grid-template-columns: repeat(7,1fr);
-   grid-template-rows: 60px;
+   grid-template-rows: 40px;
    gap: 15px;
    width: 90%;
    margin: auto;
