@@ -539,3 +539,62 @@ grid-area: 1/1/2/4;
         background-color: rgb(185, 212, 212);
         color: rgb(14, 13, 13);
     }
+
+    .eng{
+        width: 42%;
+        height: 370px;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        position:absolute;
+        top: 10%;
+        left: 30%; 
+    text-align: center; 
+    white-space: nowrap;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-synthesis: none;
+    color: #343B53;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-size: small;
+}
+
+.eng:hover{
+    cursor: pointer;
+}
+
+
+
+    .one{
+        display: flex;
+        justify-content:flex-start;
+        margin-left: 3%;
+    }
+
+    .one div:nth-child(2){
+        margin-left: 30%;
+    }
+
+    .eng div{
+        margin-top: 2%;
+    }
+
+    .two{
+        background-color: rgb(27, 4, 4);
+        color: white;
+        height: 50px;
+    }
+
+    #buttonl{
+     width: 90%;
+     color: white;
+     background-color: rgb(77, 75, 223);
+     margin-top: 35%;
+     height: 30px;
+     border-radius: 10px;
+    }
+    .eng input{
+        width: 90%;
+        height: 30px;
+        border-radius: 10px;
+    }

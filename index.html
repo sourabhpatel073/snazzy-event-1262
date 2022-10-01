@@ -49,7 +49,7 @@
             <div id="navbar-right">
                 <div id="navbar-right-1">
                  <div><img src="https://img.icons8.com/material-outlined/2x/globe--v3.png"></div>
-                 <div>English</div>
+                 <div id="settings">English</div>
                 </div>
                 <div>Support</div>
                 <div id="trips">Trips</div>
@@ -188,7 +188,25 @@
            </div>
            <div id="div8"><img src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png">
         <p>© 2022 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p></div>
-</body>
+<div class="eng">
+    <div class="one">
+        <div id="cut">X</div>
+        <div>Display Settings</div>
+    </div>
+    <div class="two"><p>You can only access your trip information</p> <P>and Expedia Rewards points from the Expedia site you booked on.</P></div>
+    <div>
+        <input type="search" placeholder="Region">
+    </div>
+    <div>
+        <input type="search" placeholder="Language">
+    </div>
+    <div>
+        <button id="buttonl">
+            Save
+        </button>
+    </div>
+</div>
+    </body>
 </html>
 
 <script>
@@ -197,7 +215,9 @@
   let button=document.querySelector("#dbutton")
   let dropdown1=document.querySelector("#dropdown1")
   let drop=document.querySelector("#drop")
-
+  let eng=document.querySelector(".eng")
+  let cut=document.querySelector("#cut")
+  let buttonl=document.querySelector("#buttonl")
  
       div.style.display="none"
  signin.addEventListener('click',() =>{
@@ -225,4 +245,18 @@
  document.querySelector("#trips").addEventListener("click",() =>{
     window.location.href="/signup/trips/trips.html"
  })
+        eng.style.display="none"
+ document.querySelector("#settings").addEventListener("click",() =>{
+    if (eng.style.display==="none"){
+    eng.style.display="block";
+ }
+ else{
+    eng.style.display="none"
+ }
+ })
+cut.addEventListener("click",() =>{
+        eng.style.display="none"})
+
+        buttonl.addEventListener("click",() =>{
+        eng.style.display="none"})
 </script>
