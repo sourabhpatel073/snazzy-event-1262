@@ -10,7 +10,7 @@
 <body>
     <div id="nav">
         <img id="nav-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAAYFBMVEX///8eIB0AAADGxsXIycgbHRoZGxjx8fHu7u709PQNEAsABwDq6uoLDQoVFxQFCANISUg4OjhPUE9CQ0KDg4NWV1aZmZh0dXTj4+MpKygjJSK2trXS0tJ9fX3Z2dkyMzLQ3II2AAABn0lEQVRoge2a63aDIBCEAdG2EEVjUrVt6vu/ZW0uuvq/M+lx5wW+A8ywXNYYlUqlUqlUqn+tw+l4fqeQvYtV5YYXPDlzuZ0UOzjZ38g2L1/B5CzdyNa6A5hcFndyXmAXO0sPsnUnLNk9ZtuGZidkv5Bj/YYkizHHI9Rii7cnMjTSghxq6Ji9W8gNa515qYrtXrydBJnlbTDZLxUjtNjZlt7eSaq0YiDJXisGh5y0Yvw5mZcq9xQVAwneZ8V4Bm9XZ3CeZ7L9+PQZQv2VLNbZ2tyBNHwZ00syToXrTRcY5CnDnRkog56WdmCiaRN+Ydms+n3844Rr/L4Ge72lQNTftzNP20gndmSVj03RBI9bHBVK7NGfeaXeXHnQ6x1mdlmD2eKwkmrwRwPT55523Vv7fMSiVz4f0XMuHjRa2qcW2ec8dsJedzc+Z2YMXUsSr5ZkQTwaor22XLnhGVs93/EyFhpixgbimWnknVuYtQSeMbnexFqC39eoPp/ZFZotW2IuWLRsBAr7aX8STV/wUTNb3ZgNfsy2RpVKpVKpVCqsfgBX5BwGKRTRLwAAAABJRU5ErkJggg=="> 
-        <img id="nav-img-1" src="https://www.expedia.co.in/_dms/interstitial/logo.svg?locale=en_GB&siteid=27"> 
+        <img id="nav-img-1"  class="home" src="https://www.expedia.co.in/_dms/interstitial/logo.svg?locale=en_GB&siteid=27"> 
         
     </div>
     <div id="container">
@@ -77,6 +77,10 @@
         localStorage.setItem("signup_details",JSON.stringify(obj))
     }
     document.querySelector("#nav-img").addEventListener("click",() =>{
+    window.location.href="/index.html"
+ })
+
+ document.querySelector(".home").addEventListener("click",() =>{
     window.location.href="/index.html"
  })
 </script>
