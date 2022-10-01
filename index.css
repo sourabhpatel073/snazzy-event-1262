@@ -598,3 +598,34 @@ grid-area: 1/1/2/4;
         height: 30px;
         border-radius: 10px;
     }
+
+    #abs{
+        position: absolute;
+        top: 90%;
+        color: white;
+        width: 20%;
+        margin-left: 5%;
+    }
+
+    #abs button{
+        background-color: rgb(81, 81, 212);
+        color: white;
+        height: 50px;
+        border-radius: 10px;
+        width: 80%;
+    }
+    #abs:hover{
+        cursor: pointer;
+    }
+
+    #abs button:hover{
+        cursor: pointer;
+    }
+
+    #plan{
+        position: absolute;
+        top: 235%;
+        color: rgb(241, 240, 240);
+        width: 50%;
+        margin-left: 5%;
+    }
