@@ -18,6 +18,32 @@
               <div>More Travel </div>
               <div><img id="drop" src="https://img.icons8.com/external-royyan-wijaya-detailed-outline-royyan-wijaya/2x/external-chevron-arrow-line-royyan-wijaya-detailed-outline-royyan-wijaya.png"></div>
             </div>
+            <div id="dropdown1">
+                <div>
+                    Stays
+                </div>
+                <div>
+                    Flights
+                </div>
+                <div>
+                    Cars
+                </div>
+                <div>
+                    Packages
+                </div>
+                <div>
+                    Holiday activities
+                </div>
+                <div>
+                    details
+                </div>
+                <div>
+                    Groups & meetings
+                </div>
+                <div>
+                    Mobile
+                </div>
+            </div>
             </div>
 
             <div id="navbar-right">
@@ -169,6 +195,9 @@
  let signin=document.getElementById("signin")
   let div=document.getElementById("dogle")
   let button=document.querySelector("#dbutton")
+  let dropdown1=document.querySelector("#dropdown1")
+  let drop=document.querySelector("#drop")
+
  
       div.style.display="none"
  signin.addEventListener('click',() =>{
@@ -183,4 +212,13 @@
     window.location.href="/signup/signin.html"
  })
 
+ dropdown1.style.display="none"
+ drop.addEventListener('click',() =>{
+ if (dropdown1.style.display==="none"){
+    dropdown1.style.display="block";
+ }
+ else{
+    dropdown1.style.display="none"
+ }
+ })
 </script>
